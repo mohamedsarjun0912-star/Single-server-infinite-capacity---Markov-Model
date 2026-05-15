@@ -17,7 +17,7 @@ This is a queuing model in which the arrival is Marcovian and departure distribu
 ![imAGE](2.png)
  
 ## Program:
-
+~~~
 # Getting Inputs
 ArrivalTime = int(input("Enter the mean inter arrival time of objects from feeder (in secs) : "))
 ServiceTime = int(input("Enter the mean inter service time of the Lathe Machine (in secs) : "))
@@ -44,8 +44,9 @@ if Lambda < Mu:
     print("Probability that the system is empty : %0.2f " % (1 - Lambda / Mu))
 else:
     print("Warning! Objects Over flow will happen in the conveyor")
-
+~~~
 ## Output :
+~~~
 Enter the mean inter arrival time of objects from feeder (in secs) : 12
 Enter the mean inter service time of the Lathe Machine (in secs) : 1
 Enter the time taken by the Robot (in secs) : 5
@@ -57,6 +58,6 @@ Average waiting time of an object in the system : 1.09 secs
 Average waiting time of an object in the conveyor : 0.09 secs
 Probability that the system is busy : 0.08 
 Probability that the system is empty : 0.92 
-
+~~~
 ## Result :
 This the python program is implemented and executed successfully
